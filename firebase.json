@@ -1,0 +1,57 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "health-app-ff9cb",
+          "appId": "1:102257285901:android:ba0706b0a1f72aadf46e44",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "health-app-ff9cb",
+          "appId": "1:102257285901:ios:3af2ccc7eae3db1cf46e44",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "health-app-ff9cb",
+          "appId": "1:102257285901:ios:3af2ccc7eae3db1cf46e44",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "health-app-ff9cb",
+          "configurations": {
+            "android": "1:102257285901:android:ba0706b0a1f72aadf46e44",
+            "ios": "1:102257285901:ios:3af2ccc7eae3db1cf46e44",
+            "macos": "1:102257285901:ios:3af2ccc7eae3db1cf46e44",
+            "web": "1:102257285901:web:9634ddd4b58af674f46e44",
+            "windows": "1:102257285901:web:3db424e70b70ee80f46e44"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
